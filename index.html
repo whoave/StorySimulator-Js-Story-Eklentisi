@@ -1,74 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Story Simulator @mert.can.uslu</title>
     <!-- Story Simulator CSS IMPORT -->
-    <link rel="stylesheet" href="story_simulator.css">
-    <style>*{font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif}</style>
-</head>
-<body>
-<h1>Mert Can USLU</h1>
+    <link rel="stylesheet" href="dist/story_simulator.css">
+    <style>
+        body {
+            margin: 30px;
+        }
 
-<!-- Buradan -->
-<div id="story_wrapper">
-</div>
-<div style="clear:both;"></div>
-<!-- Buraya kadar -->
+        * {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Mert Can USLU</h1>
+
+    <!-- Buradan -->
+    <div id="story_wrapper">
+    </div>
+    <div style="clear:both;"></div>
+    <!-- Buraya kadar -->
 
     <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet suscipit mi. Integer libero dui, faucibus vitae nisi nec, interdum ultricies mi. Sed pellentesque placerat nisi, sed placerat lacus efficitur ut. Suspendisse tristique ut eros ut placerat. In cursus pharetra lacinia. Etiam tortor velit, porttitor eget ipsum a, rutrum luctus mi. Nunc ante odio, commodo ac turpis ut, feugiat malesuada magna. Curabitur volutpat varius elit, a consequat urna semper sit amet. Duis id tortor facilisis, sollicitudin dui quis, dignissim enim. Fusce dignissim nisl et arcu lacinia venenatis. Proin gravida velit porttitor dui faucibus elementum. Phasellus eget odio justo. Etiam non risus id mi tincidunt ornare at in nulla.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet suscipit mi. Integer libero dui, faucibus
+        vitae nisi nec, interdum ultricies mi. Sed pellentesque placerat nisi, sed placerat lacus efficitur ut.
+        Suspendisse tristique ut eros ut placerat. In cursus pharetra lacinia. Etiam tortor velit, porttitor eget ipsum
+        a, rutrum luctus mi. Nunc ante odio, commodo ac turpis ut, feugiat malesuada magna. Curabitur volutpat varius
+        elit, a consequat urna semper sit amet. Duis id tortor facilisis, sollicitudin dui quis, dignissim enim. Fusce
+        dignissim nisl et arcu lacinia venenatis. Proin gravida velit porttitor dui faucibus elementum. Phasellus eget
+        odio justo. Etiam non risus id mi tincidunt ornare at in nulla.
     </p>
     <!-- JQUERY IMPORT -->
-    <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <!-- STORY SIMULATOR JS Import -->
-    <script 
-    src="story_simulator.js"></script>
+    <script src="story_simulator.js"></script>
 
     <!-- STORY SIMULATOR KURULUM -->
     <script>
-    // uID = Benzersiz ID
-    // pIMG = Profil Fotoğrafı
-    // sLIST = Story Listesi
-    // fID = Fotoğraf/Profil ID/Sahibi        
-    new storySimulator({
-        uID:"test",
-        pIMG:"https://images.pexels.com/photos/1452954/pexels-photo-1452954.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        sLIST:[
-            "https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-            "https://images.pexels.com/photos/1164985/pexels-photo-1164985.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-        ],
-        fID:"Büşra"
-    }
-    );
-    new storySimulator({
-        uID:"ahmetinStorysi",
-        pIMG:"https://images.pexels.com/photos/837358/pexels-photo-837358.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        sLIST:[
-            "https://images.pexels.com/photos/92637/pexels-photo-92637.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-            "https://images.pexels.com/photos/358612/pexels-photo-358612.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-        ],
-        fID:"Ahmet"
-    }
-    );
-    new storySimulator({
-        uID:"Catgiller",
-        pIMG:"https://images.pexels.com/photos/736532/pexels-photo-736532.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-        sLIST:[
-            "https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-            "https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-            "https://images.pexels.com/photos/1170986/pexels-photo-1170986.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-            "https://images.pexels.com/photos/320014/pexels-photo-320014.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-        ],
-        fID:"Ket"
-    }
-    );
-    
+        // uID = Benzersiz ID
+        // pIMG = Profil Fotoğrafı
+        // sLIST = Story Listesi
+        // fID = Fotoğraf/Profil ID/Sahibi        
+        new storySimulator({
+            uID: "test",
+            pIMG: "https://images.pexels.com/photos/1452954/pexels-photo-1452954.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+            sLIST: [
+                "https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+                "https://images.pexels.com/photos/1164985/pexels-photo-1164985.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            ],
+            fID: "Büşra"
+        });
+        new storySimulator({
+            uID: "ahmetinStorysi",
+            pIMG: "https://images.pexels.com/photos/837358/pexels-photo-837358.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+            sLIST: [
+                "https://images.pexels.com/photos/92637/pexels-photo-92637.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+                "https://images.pexels.com/photos/358612/pexels-photo-358612.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            ],
+            fID: "Ahmet"
+        });
+        new storySimulator({
+            uID: "Catgiller",
+            pIMG: "https://images.pexels.com/photos/736532/pexels-photo-736532.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+            sLIST: [
+                "https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+                "https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+                "https://images.pexels.com/photos/1170986/pexels-photo-1170986.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+                "https://images.pexels.com/photos/320014/pexels-photo-320014.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            ],
+            fID: "Ket"
+        });
     </script>
 </body>
+
 </html>
